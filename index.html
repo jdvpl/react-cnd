@@ -8,18 +8,24 @@
 
     <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
 </head>
 <body>
     <div id="app">
 
     </div>
-    <script>
-        ReactDOM.render(React.createElement("ol",null,
-            React.createElement("li",null,"Uva"),
-            React.createElement("li",null,"Pera"),
-            React.createElement("li",null,"Mango"),
-            ),
-            document.getElementById("app"))
+    <script type="text/babel">
+        ReactDOM.render(
+            <div>
+                <ul> 
+                    <li>kisama </li>    
+                    <li>pera </li>    
+                    <li>mango </li>    
+                </ul>
+            </div>,
+            document.getElementById("app")
+        );
     </script>
 
 </body>
