@@ -16,14 +16,18 @@
 
     </div>
     <script type="text/babel">
+        // componente
+        class Saludo extends React.Component {
+            render(){
+                return(
+                    <div> 
+                        <h2> Hola kisama</h2>
+                    </div>
+                );
+            }
+        }
         ReactDOM.render(
-            <div>
-                <ul> 
-                    <li>kisama </li>    
-                    <li>pera </li>    
-                    <li>mango </li>    
-                </ul>
-            </div>,
+            <Saludo />,
             document.getElementById("app")
         );
     </script>
