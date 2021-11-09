@@ -10,13 +10,13 @@ const Contador = () => {
     }
     return (
         <div>
-            COntador {contador}
+            <h2  className={contador <0 ?"menor" : "mayor"}>Contador {contador}</h2>
             <hr />
             <button
                 onClick={aumentar}
             >Aumentar</button>
             <button
-                 onClick={reducir}
+                onClick={reducir}
             >Disminuir</button>
         </div>
     )
